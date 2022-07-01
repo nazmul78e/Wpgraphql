@@ -24,7 +24,7 @@ class Team extends Component {
                         <div className="member-img">
                           {teamItem.memberImage && (
                             <img
-                              src={teamItem.memberImage.url}
+                              src={teamItem.memberImage.sourceUrl}
                               className="img-fluid"
                               alt="member img"
                             />

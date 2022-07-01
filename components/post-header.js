@@ -1,8 +1,9 @@
-import Avatar from '../components/avatar'
-import Date from '../components/date'
-import CoverImage from '../components/cover-image'
-import PostTitle from '../components/post-title'
-import Categories from '../components/categories'
+import Avatar from "../components/avatar";
+import Date from "../components/date";
+import CoverImage from "../components/cover-image";
+import PostTitle from "../components/post-title";
+import Categories from "../components/categories";
+import Image from "next/image";
 
 export default function PostHeader({
   title,
@@ -10,6 +11,7 @@ export default function PostHeader({
   date,
   author,
   categories,
+  video,
 }) {
   return (
     <>
@@ -28,7 +30,15 @@ export default function PostHeader({
           Posted <Date dateString={date} />
           <Categories categories={categories} />
         </div>
+        <div>
+          {/* <Image
+            width={1000}
+            height={1000}
+            alt={`Cover Image for ${title}`}
+            src={video?.videoUrl}
+          ></Image> */}
+        </div>
       </div>
     </>
-  )
+  );
 }
